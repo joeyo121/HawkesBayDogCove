@@ -1,0 +1,320 @@
+<!Doctype html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>News & Events Page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap" rel="stylesheet">
+	
+</head>
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!--Header Section-->
+	<header>
+		<div>
+			<h1 class="brand">Hawke's Bay Dog Cove</h1>
+		</div>
+	</header>
+	
+	<!--Navigation Menu Section-->
+	<nav>
+		<div id="nav" class="overlay">
+			<a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="News&Events.html">News & Events</a></li>
+					<li><a href="LocalSales.html">Sales</a></li>
+					<li><a href="Forums.html">Forums</a></li>
+					<li><a href="PhotoGallery.html">Photo Gallery</a></li>
+					<li><a href="ContactUs.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<!--Main Section-->
+	<main>
+	<section>
+		<span class="menu" onclick="openNav()">&#9776; Menu</span>
+		<div class="title">
+			<h1>News & Events</h1>
+		</div>
+	</section>
+	
+	<section>
+	<!-- First section-->
+	<div class="news-container">
+		<h3 class="news-title">Current News</h3>
+		<div class="article-container">
+			<div class="news-small">
+			<img src="https://resources.stuff.co.nz/content/dam/images/4/y/o/x/l/e/image.related.StuffLandscapeSixteenByNine.1240x700.4yunki.png/1630993445443.jpg?format=pjpg&optimize=medium" alt="Guide dog">
+			</div>
+			<div class="news-large">
+			<p>
+				<h4>Wagging runaway: Trainee guide dog goes missing</h4><br><br>
+				A trainee guide-dog has done a runner.
+			</p>
+			<p id="detailed1" style="display:none;">
+				Police were called on Tuesday after the pooch went missing from a Dunedin address.<br>
+				The trainee guide dog had run off from the address at about 12.20pm, a spokeswoman said.<br>
+				Officers were told to keep a look-out for the dog and Dunedin City Council was notified.<br>
+				For the full article: <a href="https://www.stuff.co.nz/otago/300401874/wagging-runaway-trainee-guide-dog-goes-missing">Click here</a>
+			</p>
+			<button id="expandBtn" onclick="expandText(this, 'detailed1')" value="more">Read more</button>
+			</div>
+		</div>
+		
+		<div class="article-container">
+			<div class="news-small">
+			<img src="https://www.rnz.co.nz/assets/news_crops/129690/eight_col_CosmoLucy.jpg?1630903259" alt="Lucy and Cosmo">
+			</div>
+			<div class="news-large">
+			<p>
+				<h4>How my dog taught me new tricks during lockdown</h4><br>
+				As most of the country prepares to leave lockdown, Lucy Corry shares the lessons she learned from an unlikely teacher.<br><br>
+			</p>
+			<p id="detailed2" style="display:none;">
+				<b>Exercise is important, especially outside excercise</b><br>
+				There's nothing like a small bout of self-isolation to make you realise how good it is to be able to go outside. My favourite lockdown coping mechanism is going for a run by myself in the early morning, when there are no cars on the roads and no people to dodge. Having a dog means you have to get out of the house, even when your personal motivation - or the motivation of your other bubble members - is low. Everyone feels better after a walk, including the dog.<br><br>
+				<b>Everyone needs time alone</b><br>
+				There is one room in our little house where there's no Wifi. And no people. Coincidence? It's also where the dog likes to go and hang out by himself, to snuggle between the cushions on the sofa and bask in the sun. It's a very peaceful place to sit, device-free. Of course, once you're there it doesn't take long before everyone in the house realises where you are and wants to be there too, but five minutes' solitude is very restorative.<br><br>
+				<b>Eat as well as you can, but don't overdo it</b><br>
+				If ever there's a time to focus on food, it's now. It can be tempting to live from one chocolate biscuit or chewy chicken strip to the next, but proper meals are a better way to punctuate the day. Treats are important for mental wellbeing, but try to save them as rewards for good work, or good doggy behaviour.<br><br>
+				<b>Don't let yourself go</b><br>
+				Hair unbrushed? Dirty feet? A bit stinky? It might be a while before any of us are hanging out with other people, but that's no reason to drop our usual standards. You don't have to go full Hilary Barry on it, but be assured no one likes to share the sofa with a stinky dog, or teenager. A bit of brushing and washing now will also save you a lecture from the dog groomer/hairdresser later.<br><br>
+				<b>No one likes a barking dog</b><br>
+				In other words, don't go off on a meaningless rant because you're upset about something. Barking incessantly is the dog version of being a keyboard warrior on social media. It puts everyone in a bad mood and achieves nothing. If there's a tennis ball taunting you under the sofa, no amount of barking will shift it. In other words: don't moan, take action!<br><br>
+				For the full article: <a href="https://www.rnz.co.nz/news/national/450987/how-my-dog-taught-me-new-tricks-during-lockdown">Click here</a>
+			</p>
+			<button id="expandBtn" onclick="expandText(this, 'detailed2')" value="more">Read more</button>
+			</div>
+		</div>
+		
+		<div class="article-container">
+			<div class="news-small">
+			<img src="https://www.nzherald.co.nz/resizer/A377QyELLDwtzjKeQux8X5SKsVQ=/1440x810/smart/filters:quality(70)/cloudfront-ap-southeast-2.images.arcpublishing.com/nzme/RLEFL4D3T6JK4K5363K6FDGYEE.jpg" alt="Seal pup">
+			</div>
+			<div class="news-large">
+			<p>
+				<h4>Dog owners reminded to be 'cautious' after seal pup found injured on Auckland beach</h4><br>
+				Auckland Council Animal Management is reminding dog owners to be cautious of the seals when walking their pets on a Devonport beach after a seal pup was injured.<br><br>
+			</p>
+			<p id="detailed3" style="display:none;">
+				Animal Management staff received a call about a seal in distress at Narrow Neck beach on Sunday.Auckland Council manager animal management Elly Waitoa said a seal pup was located on the rocks and had minor cuts on its back. Animal Management staff did not know how to pup received the injuries. However, Devonport locals believe it was due to a dog attack.<br><br>
+				For the full article: <a href="https://www.nzherald.co.nz/nz/dog-owners-reminded-to-be-cautious-after-seal-pup-found-injured-on-auckland-beach/RNKZHCG5O2ABLDFQGHIPSAOIGE/">Click here</a>
+			</p>
+			<button id="expandBtn" onclick="expandText(this, 'detailed3')" value="more">Read more</button>
+			</div>
+		</div>
+		
+		<div class="article-container">
+			<div class="news-small">
+			<img src="https://resources.stuff.co.nz/content/dam/images/4/y/o/z/u/z/image.related.StuffLandscapeSixteenByNine.1240x700.236skl.png/1630791623260.jpg?format=pjpg&optimize=medium" alt="Police deploy dog">
+			</div>
+			<div class="news-large">
+			<p>
+				<h4>Police deploy dog units to hunt for fleeing driver in Christchurch</h4><br>
+				Police are hunting for a person after they fled officers in a stolen vehicle in Christchurch overnight.<br><br>
+			</p>
+			<p id="detailed4" style="display:none;">
+				Police spotted a vehicle with stolen plates on Marshland Rd about 1am on Sunday, a police spokesman said. “Staff signalled the vehicle to stop but the driver failed to do so and staff did not pursue.” He said the vehicle was found a short time later abandoned on Old Windsor Ln in Bottle Lake. Police deployed dog units to track the driver, but they were unable to find them. Police were continuing to make enquiries to find them, he said<br><br>
+				For the full article: <a href="https://www.stuff.co.nz/national/crime/126288165/police-deploy-dog-units-to-hunt-for-fleeing-driver-in-christchurch">Click here</a>
+			</p>
+			<button id="expandBtn" onclick="expandText(this, 'detailed4')" value="more">Read more</button>
+			</div>
+		</div>
+	</div>
+	
+	<!--Aside Section-->
+	<aside>
+	<div class="calendar" id="calendar">
+		<h3 class="news-title">Up Coming Events</h3>	
+		<div class="month">      
+		  <ul>
+			<li class="prev">&#10094;</li>
+			<li class="next">&#10095;</li>
+			<li>
+			  September<br>
+			  <span style="font-size:18px">2021</span>
+			</li>
+		  </ul>
+		</div>
+		
+		<ul class="weekdays">
+		  <li>Mo</li>
+		  <li>Tu</li>
+		  <li>We</li>
+		  <li>Th</li>
+		  <li>Fr</li>
+		  <li>Sa</li>
+		  <li>Su</li>
+		</ul>
+
+		<ul class="days">  
+		  <li>1</li>
+		  <li>2</li>
+		  <li>3</li>
+		  <li>4</li>
+		  <li>5</li>
+		  <li>6</li>
+		  <li>7</li>
+		  <li>8</li>
+		  <li><span class="active">9</span></li>
+		  <li>10</li>
+		  <li>11</li>
+		  <li>12</li>
+		  <li>13</li>
+		  <li>14</li>
+		  <li>15</li>
+		  <li>16</li>
+		  <li>17</li>
+		  <li>18</li>
+		  <li>19</li>
+		  <li>20</li>
+		  <li>21</li>
+		  <li>22</li>
+		  <li>23</li>
+		  <li>24</li>
+		  <li>25</li>
+		  <li>26</li>
+		  <li>27</li>
+		  <li>28</li>
+		  <li>29</li>
+		  <li>30</li>
+		</ul>
+	</div>
+	<div>
+		<br>
+		<table>
+			<tr>
+				<th>Pet First Aid Course - 12 Sept<br>
+				<p>Our Pet First Aid Courses educate both pet owners and those working in the industry on animal first aid and emergency situations.<br><br>
+					For more information:
+						<a href="https://p.facebook.com/events/159677586261888">Click here</a>
+				</p>
+				</th>
+			</tr>
+			<tr>
+				<th>Deco Dog Parade - Napier Art Deco Festival<br>
+				<p>This is a chance for us to dress our dogs and ourselves up to celebrate Napier’s wonderful heritage.<br><br>
+					For more information:
+					<a href="https://www.eventbrite.co.nz/e/deco-dog-parade-napier-art-deco-festival-2021-registration-126890644333#">Click here</a>
+				</p>
+				</th>
+			</tr>
+			<tr>
+				<th>Flaxmere Parkrun<br>
+				<p>Flaxmere parkrun hold free, weekly, 5km timed events every Saturday at 8am at Flaxmere Park for you to run, walk, or jog at your preferred pace.<br><br>
+					For more information:
+					<a href="https://www.napier.govt.nz/napier/whats-on/events/show/670260/flaxmere-parkrun&refID=7#eventid">Click here</a>
+				</p>
+				</th>
+			</tr>
+			<tr>
+				<th>Truffle Hunt<br>
+				<p>You can take part in an exciting and unusual event in Hawkes Bay. An outing in the country searching for the elusive truffle.<br><br>
+					For more information:
+					<a href="https://www.eventfinda.co.nz/2021/truffle-hunt2/napier">Click here</a>
+				</p>
+				</th>
+			</tr>			
+		</table>
+	</div>
+	</aside>
+
+	<!-- Second section -->	
+	<div class="news-container">
+	<h3 class="news-title">Community Notices</h3>
+		<div class="article-container">
+			<div class="news-small">
+			<img src="https://cdn.neighbourly.co.nz/images/cache/message_image_thumbnail/message_images/6135e900037e99.47902308.jpeg?170410" alt="White flowers">
+			</div>
+			<div class="news-large">
+			<p>
+				<h4>THE KIT</h4><br>
+				Hi there, THE KIT is better than before. It now has five chapters that have all been expanded and had plenty more things added to them. Just like your Earthquake Kit that is pre-packed and ready to go in the event of a disaster.<br><br>
+			</p>
+			<p id="detailed5" style="display:none;">
+				THE KIT comes in three great colours. You can choose your colours - Pink, Blue or Green. Prices will be increasing soon due to increased production costs. Single Person KIT = $30.00 Couples KIT = $40.00 Pick up Hastings CBD Delivery or Post is $10.00 (up to three KITS per post)<br><br>
+				For the full Notice: <a href="https://www.neighbourly.co.nz/public/napier/taradale">Click here</a>
+			</p>
+			<button id="expandBtn" onclick="expandText(this, 'detailed5')" value="more">Read more</button>
+			</div>
+		</div>
+	
+		<div class="article-container">
+			<div class="news-small">
+			<img src="https://cdn.neighbourly.co.nz/images/cache/message_max_size/message_images/6137d81add81d6.16673012.jpeg?170410" alt="Smile Coffee">
+			</div>
+			<div class="news-large">
+			<p>
+				<h4>It's the simple things...</h4><br>
+				Hey neighbours, Wrapped up in our bubbles - it's certainly been a tough few weeks.<br><br>
+			</p>
+			<p id="detailed6" style="display:none;">
+				With our daily routines challenged, we were able to slow down and enjoy the better things in life. That's why we want you be a part of the Neighbourly joy movement and share the simple things that make you happy.Share a photo or story with your neighbours and you could be in to win Good Joe Coffee and Best Ugly Bagels (or bagels for your whole street!).<br><br>
+				For the full Notice: <a href="https://www.neighbourly.co.nz/public/napier/taradale">Click here</a>
+			</p>
+			<button id="expandBtn" onclick="expandText(this, 'detailed6')" value="more">Read more</button>
+			</div>
+		</div>
+		
+		<div class="article-container">
+			<div class="news-small">
+			<img src="https://cdn.neighbourly.co.nz/images/cache/message_max_size/message_images/6136fb57959673.80724760.png?170410" alt="Recross Shop open">
+			</div>
+			<div class="news-large">
+			<p>
+				<h4>We are open! Red Cross Shop</h4><br>
+				We are thrilled to announce that we are re-opening to the public today!! Our shop team have been cleaning and putting out fresh stock for you, so we are thoroughly prepared and following Ministry of Health guidelines to keep you and our team safe.<br><br>
+			</p>
+			<p id="detailed7" style="display:none;">
+				Please remember that wearing a face covering, signing in and keeping a 2-meter distance from one another, is mandatory now. We can now accept donations too, however, please check in with each shop, to make sure they have enough room to safely receive them. You can find the contact details of the Red Cross Shop nearest you by clicking the button below.<br><br>
+				For the full Notice: <a href="https://www.neighbourly.co.nz/public/napier/taradale">Click here</a>
+			</p>
+			<button id="expandBtn" onclick="expandText(this, 'detailed7')" value="more">Read more</button>
+			</div>
+		</div>
+		
+		<div class="article-container">
+			<div class="news-small">
+			<img src="https://cdn.neighbourly.co.nz/images/cache/message_image_thumbnail/message_images/61369b773bcd17.80392444.jpeg?170410" alt="Curtains">
+			</div>
+			<div class="news-large">
+			<p>
+				<h4>Curtain Clean (Hawkes Bay Chem-Dry) - Level 2 - Open</h4><br>
+				We are open for Level 2! Please follow Covid safety guidelines!<br><br>
+				For the full Notice: <a href="https://www.neighbourly.co.nz/public/napier/taradale">Click here</a>
+			</p>
+			</div>
+		</div>
+	</div>
+	</section>
+	</main>
+
+	
+	<!--Footer Section-->
+	<footer>
+		<div>
+		Created by: Bonnie Joe.<br>
+		<b>This website is for academic purposes only.</b><br>
+		Contact me at:
+			<a href="mailto:joeb1@student.eit.ac.nz">joeb1@student.eit.ac.nz</a>
+			<br>
+			<br>
+		<a href="references.html">References &  Authenticity</a> |
+		<a href="Privacy-policy.html">Privacy Policy</a> |
+		<a href="TermsOfUse.html">Terms of Use</a>
+		</div>
+	</footer>
+	
+	<script src="javascript/javascript.js"></script>
+
+</body>
+</html>

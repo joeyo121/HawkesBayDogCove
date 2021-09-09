@@ -1,0 +1,226 @@
+<!Doctype html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sales Page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap" rel="stylesheet">
+	
+</head>
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!--Header Section-->
+	<header>
+		<div>
+			<h1 class="brand">Hawke's Bay Dog Cove</h1>
+		</div>
+	</header>
+	
+	<!--Navigation Menu Section-->
+	<nav>
+		<div id="nav" class="overlay">
+			<a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="News&Events.html">News & Events</a></li>
+					<li><a href="LocalSales.html">Sales</a></li>
+					<li><a href="Forums.html">Forums</a></li>
+					<li><a href="PhotoGallery.html">Photo Gallery</a></li>
+					<li><a href="ContactUs.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<!--Main Section-->
+	<main>
+		<section>
+			<span class="menu" onclick="openNav()">&#9776; Menu</span>
+			<div class="title">
+				<h1>Sales</h1>
+			</div>	
+		</section>
+		
+		<section>
+			<div class="tab">
+				<button class="tablinks active" onclick="openForum(event, 'Forum1')">Lge Food Bowl</button>
+				<button class="tablinks" onclick="openForum(event, 'Forum2')">Lamb Toy</button>
+				<button class="tablinks" onclick="openForum(event, 'Forum3')">Cheese Treat</button>
+				<button class="tablinks" onclick="openForum(event, 'Forum4')">Dog Bed</button>
+				<button class="tablinks" onclick="openForum(event, 'Forum5')">Collar</button>
+				<button class="tablinks" onclick="openForum(event, 'Forum6')">Lead</button>
+				<button class="tablinks" onclick="openForum(event, 'Forum7')">Croc Toy</button>
+				<button class="tablinks" onclick="openForum(event, 'Forum8')">Dog Food</button>
+			</div>
+			
+			<div id="Forum1" class="tabcontent">
+			<div class="sales-container">
+				<h2>Large Food Bowl</h2>
+				<br><br>
+				<img src="images/sales-image1.jpg" class="sales-img" alt="lgeFoodBowl">
+				<p><h5>SKU: I253132</h5></p><br>
+				<p><b>Description:</b><br>
+				Glossy inside & outside, easy pick-up sides, stable base helps to prevent slipping & tipping, dishwasher safe, <br>
+				made from food approved BPA free non-toxic premium plastic. <br>
+				Made in Belgium.</p>
+				<br><br>
+				<h4>$14.99 each</h4>
+			</div>
+			</div>
+			
+			<div id="Forum2" class="tabcontent" style="display: none;">
+			<div class="sales-container">
+				<h2>Cute Lamb Toy</h2>
+				<br><br>
+				<img src="images/sales-image2.jpg" class="sales-img" alt="LambToy">
+				<p><h5>SKU: I249000</h5></p><br>
+				<p><b>Description:</b><br>
+				Enjoy a chew or just snuggle up with your plush lamb chop.</p>
+				<br><br>
+				<h4>$19.99 each</h4>
+			</div>
+			</div>
+			
+			<div id="Forum3" class="tabcontent" style="display: none;">
+			<div class="sales-container">
+				<h2>Delicious Cheese Treat 4 Pack</h2>
+				<br><br>
+				<img src="images/sales-image3.jpg" class="sales-img" alt="CheeseTreat">
+				<p><h5>SKU: I255457</h5></p><br>
+				<p><b>Description:</b><br>
+				These delicious creamy treats for dogs are high in moisture and made with farm-raised chicken and all-natural ingredients.</p>
+				<br><br>
+				<h4>$6.99 a pack</h4>
+			</div>
+			</div>
+			
+			<div id="Forum4" class="tabcontent" style="display: none;">
+			<div class="sales-container">
+				<h2>Medium Dog Bed</h2>
+				<br><br>
+				<img src="images/sales-image4.jpg" class="sales-img" alt="DogBed">
+				<p><h5>SKU: I256529</h5></p><br>
+				<p><b>Description:</b><br>
+				This super comfort orthopaedic bed has deep, relaxing grooves and dense memory foam</p>
+				<br><br>
+				<h4>$145.99 each</h4>
+			</div>
+			</div>
+			
+			<div id="Forum5" class="tabcontent" style="display: none;">
+			<div class="sales-container">
+				<h2>Collar</h2>
+				<br><br>
+				<img src="images/sales-image5.jpg" class="sales-img" alt="Collar">
+				<p><h5>SKU: I248383</h5></p><br>
+				<p><b>Description:</b><br>
+				Our dog collars are made with premium nylon webbing, solid stainless<br>
+				steel D-rings and our trademarked buckle bone side release buckle.</p>
+				<br><br>
+				<h4>$24.99 each</h4>
+			</div>
+			</div>
+			
+			<div id="Forum6" class="tabcontent" style="display: none;">
+			<div class="sales-container">
+				<h2>Lead</h2>
+				<br><br>
+				<img src="images/sales-image6.jpg" class="sales-img" alt="Lead">
+				<p><h5>SKU: I170001</h5></p><br>
+				<p><b>Description:</b><br>
+				Designed for comfort and practicality but finished in high street style.</p>
+				<br><br>
+				<h4>$34.99 each</h4>
+			</div>
+			</div>
+			
+			<div id="Forum7" class="tabcontent" style="display: none;">
+			<div class="sales-container">
+				<h2>Crocodile Toy</h2>
+				<br><br>
+				<img src="images/sales-image7.jpg" class="sales-img" alt="CrocToy">
+				<p><h5>SKU: I248993</h5></p><br>
+				<p><b>Description:</b><br>
+				These funny latex crocdile dog toys are made of durable latex.</p>
+				<br><br>
+				<h4>$10.99 a pack</h4>
+			</div>
+			</div>
+			
+			<div id="Forum8" class="tabcontent" style="display: none;">
+			<div class="sales-container">
+				<h2>Dry Dog Food 2.5kg</h2>
+				<br><br>
+				<img src="images/sales-image8.jpg" class="sales-img" alt="DogFood">
+				<p><h5>SKU: I254942</h5></p><br>
+				<p><b>Description:</b><br>
+				Provide your dog with a complete, balanced, and nutritional diet with Ivory Coat Lamb & Brown Rice<br>
+				Adult Dry Dog Food. Protein-rich Australian lamb is the key ingredient, which helps to support healthy bones and appetite.</p>
+				<br><br>
+				<h4>$25.99 per bag</h4>
+			</div>
+			</div>
+		</section>
+	
+		<section>
+			<div class="contact-us-button">
+				<p>To order any items please make note of the SKU number and fill in our Contact form</P>
+			<h3><a href="ContactUS.html">Click Here</a></h3>
+			</div>
+		</section>
+		
+		<section>
+			<div>
+			<h3 class="slide-text">Things you may also like:</h3>
+			<div class="gallery-container">
+				<div div class="sales-gallery">
+					<img src="images/sales-image4.jpg" alt="DogBed">
+					<button class="tablinks" onclick="openForum(event, 'Forum4')">Dog Bed</button>
+				</div>
+				<div div class="sales-gallery">
+					<img src="images/sales-image2.jpg" alt="LambToy">
+					<button class="tablinks" onclick="openForum(event, 'Forum2')">Lamb Toy</button>
+				</div>
+				<div div class="sales-gallery">
+					<img src="images/sales-image3.jpg" alt="CheeseTreat">
+					<button class="tablinks" onclick="openForum(event, 'Forum3')">Cheese Treat</button>
+				</div>
+				<div div class="sales-gallery">
+					<img src="images/sales-image6.jpg" alt="Lead">
+					<button class="tablinks" onclick="openForum(event, 'Forum6')">Lead</button>
+				</div>
+				<div div class="sales-gallery">
+					<img src="images/sales-image7.jpg" alt="CrocToy">
+					<button class="tablinks" onclick="openForum(event, 'Forum7')">Croc Toy</button>
+				</div>
+			</div>
+			</div>
+		</section>
+	</main>
+	
+	
+	<!--Footer Section-->
+	<footer>
+		<div>
+		Created by: Bonnie Joe.<br>
+		<b>This website is for academic purposes only.</b><br>
+		Contact me at:
+			<a href="mailto:joeb1@student.eit.ac.nz">joeb1@student.eit.ac.nz</a>
+			<br>
+			<br>
+		<a href="references.html">References &  Authenticity</a> |
+		<a href="Privacy-policy.html">Privacy Policy</a> |
+		<a href="TermsOfUse.html">Terms of Use</a>
+		</div>
+	</footer>
+	
+	<script src="javascript/javascript.js"></script>
+	
+</body>
+</html>

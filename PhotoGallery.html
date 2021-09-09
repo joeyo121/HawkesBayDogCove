@@ -1,0 +1,120 @@
+<!Doctype html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Photo Gallery Page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap" rel="stylesheet">
+	
+</head>
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!--Header Section-->
+	<header>
+		<div>
+			<h1 class="brand">Hawke's Bay Dog Cove</h1>
+		</div>
+	</header>
+	
+	<!--Navigation Menu Section-->
+	<nav>
+		<div id="nav" class="overlay">
+			<a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="News&Events.html">News & Events</a></li>
+					<li><a href="LocalSales.html">Sales</a></li>
+					<li><a href="Forums.html">Forums</a></li>
+					<li><a href="PhotoGallery.html">Photo Gallery</a></li>
+					<li><a href="ContactUs.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<!--Main Section-->
+	<main>
+		<section>
+			<span class="menu" onclick="openNav()">&#9776; Menu</span>
+			<div class="title">
+				<h1>Photo Gallery</h1>
+			</div>
+		</section>
+		
+		<section>
+			<div class="slide-container">
+				<h4 class="slide-text" id="manual-slide-title">Playing Dogs</h4>
+				<br>
+				<img id="manual-slide-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Playing_dogs_in_Lindenhof.JPG/1200px-Playing_dogs_in_Lindenhof.JPG" height="300px" width="100%">
+			</div>
+			<div class="slide-button">
+				<button onclick="previousSlide()" id="previous">&#10094;</button>
+				<button onclick="nextSlide()" id="next">&#10095;</button>
+			</div>
+		</section>
+		
+		<section>
+			<h3 class="slide-text">All photos below:</h3>
+			<div class="gallery-container">
+				<div class="fill-in-container">
+				<div>
+					<img src="images/placeholder.jpg" id="imageHolder" height="300px">
+				</div>
+					<label>Upload Your Image: </label>
+					<input type="file" accept="image/*" id="uploadFile" onchange="uploadImage(event)">	
+					</form>
+				</div>
+			</div>
+			<div class="gallery-container">
+				<div class="gallery">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Playing_dogs_in_Lindenhof.JPG/1200px-Playing_dogs_in_Lindenhof.JPG" alt="Playing Dogs">
+				</div>
+				<div class="gallery">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Christmas_treats_for_dogs.jpg/1200px-Christmas_treats_for_dogs.jpg" alt="Christmas treats for dogs">
+				</div>			
+				<div class="gallery">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Dogs_were_not_around_in_the_early_Cenozoic.png/1200px-Dogs_were_not_around_in_the_early_Cenozoic.png" alt="Grumpy dog">
+				</div>
+			</div>
+			<div class="gallery-container">	
+				<div class="gallery">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Shaheed_Island%2C_Andamans%2C_Dogs_on_the_beach_at_sunset.jpg/1200px-Shaheed_Island%2C_Andamans%2C_Dogs_on_the_beach_at_sunset.jpg" alt="Dogs at beach">
+				</div>			
+				<div class="gallery">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Two_dogs.jpg" alt="Two Dogs">
+				</div>
+			
+				<div class="gallery">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/%D0%93%D0%BE%D1%80%D0%B0_%D0%94%D0%BE%D0%BD%D0%B3%D1%83%D0%B7%D0%BE%D1%80%D1%83%D0%BD.jpg/1200px-%D0%93%D0%BE%D1%80%D0%B0_%D0%94%D0%BE%D0%BD%D0%B3%D1%83%D0%B7%D0%BE%D1%80%D1%83%D0%BD.jpg" alt="Mountain Range">
+				</div>
+			</div>
+		</section>
+		
+	</main>
+	
+	
+	<!--Footer Section-->
+	<footer>
+		<div>
+		Created by: Bonnie Joe.<br>
+		<b>This website is for academic purposes only.</b><br>
+		Contact me at:
+			<a href="mailto:joeb1@student.eit.ac.nz">joeb1@student.eit.ac.nz</a>
+			<br>
+			<br>
+		<a href="references.html">References &  Authenticity</a> |
+		<a href="Privacy-policy.html">Privacy Policy</a> |
+		<a href="TermsOfUse.html">Terms of Use</a>
+		</div>
+	</footer>
+	
+	<script src="javascript/javascript.js"></script>
+
+</body>
+</html>

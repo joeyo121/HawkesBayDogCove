@@ -1,0 +1,211 @@
+<!Doctype html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forums Page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&display=swap" rel="stylesheet">
+	
+</head>
+<!------------------------------BODY------------------------------------------------>
+<body>
+	<!--Header Section-->
+	<header>
+		<div>
+			<h1 class="brand">Hawke's Bay Dog Cove</h1>
+		</div>
+	</header>
+	
+	<!--Navigation Menu Section-->
+	<nav>
+		<div id="nav" class="overlay">
+			<a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="News&Events.html">News & Events</a></li>
+					<li><a href="LocalSales.html">Sales</a></li>
+					<li><a href="Forums.html">Forums</a></li>
+					<li><a href="PhotoGallery.html">Photo Gallery</a></li>
+					<li><a href="ContactUs.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<!--Main Section-->
+	<main>
+		<section>
+				<span class="menu" onclick="openNav()">&#9776; Menu</span>
+				<div class="title">
+					<h1>Forums</h1>
+				</div>
+		</section>
+		<div class="contact-container">
+			<div class="home-large" style="font-size: 18px;">
+				<p>This Forum page is used for discussions within the community.<br>
+				If you would like to start a new discussion please email us <a href="ContactUs.html" style="color: #FEF695;">Here</a>.<br>
+				To ensure the topic fits Forums guidelines <br><br>
+				<b>~The Hawke's Bay Dog Cove Community!</b></p>
+			</div>
+		</div>
+		
+		<div>
+			<div class="fill-in-container">
+			<h3>Customize text size: </h3>
+				<label>Select Text Size: </label>
+				<select id="text-size" onchange="customizeText()">	
+					<option></option>
+					<option value="28px">Extra Large</option>
+					<option value="22px">Large</option>
+					<option value="16px">Regular</option>		
+				</select>
+			</div>
+		</div>
+		
+		<section>
+			<div class="tab">
+				<button class="tablinks active" onclick="openForum(event, 'Forum1')">Dog Training</button>
+				<button class="tablinks" onclick="openForum(event, 'Forum2')">GPS Tracker</button>
+				<button class="tablinks" onclick="openForum(event, 'Forum3')">Lab/redbone mix and cats?</button>
+				<button class="tablinks" onclick="openForum(event, 'Forum4')">Light weight dog food</button>
+			</div>
+			
+			<div id="Forum1" class="tabcontent">
+				<h2>Getting Licensed for my Dog Training Business</h2>
+				<br><br>
+				<p>Hi all!<br>
+				<br>I am from the bay area in California where I began my dog training business. I just moved to south Alabama where 
+				I am continuing my practice but need to get a business license. Unfortunately, the city is telling me I cannot operate
+				 out of my home where I board and train dogs/puppies. They require a very specific facility to operate out of. I'm not sure
+				 how I can correct household behaviors in a facility without household items like counter tops, sofas, and rugs. I also 
+				 cannot board and watch my clients from another location. I do not have enough income coming in to support an additional rental fee.
+				 I have been so successful caring for others pets out of my home where I can train them in a similar environment to their own. 
+				 Can someone please give any advice on this matter, maybe from Alabama (Houston County)? Does any one else train/board out of their home and are 
+				 licensed? How should I go about this to be legal? There has to be some way around this. Thank you SO much in advance! 
+				 <br><br>All comments and or advice/suggestions are welcome.I am just an individual.
+				 I don't have employees so I don't understand why I am required to operate out of a separate location other than my home. :(</p>
+				 <br><br>
+				<hr>
+				<h3>Discussion:</h3>
+				<div id="comment-list">
+				</div>
+				<br>
+				<h4>Add your comment: </h4>
+				<br>
+				<label>Name: </label>
+				<input type="text" id="comment-name" placeholder="Name">
+				<br>
+				<label>Comment: </label><br>
+				<textarea id="comment-text"></textarea>
+				<br>
+				<input type="submit" value="POST" onclick="addComment()"></input>
+			</div>
+			<div id="Forum2" class="tabcontent" style="display: none;">
+				<h2>GPS Tracker</h2>
+				<br><br>
+				<p>I walk my dog about 5 miles a day through the woods. She likes to take off into the woods to explore. There is nothing out there that can hurt her and I know she will come back in a while. 
+					so I am fine with that, but it would really be nice to be able to find her if it ever came to that.<br>
+					I bought a Tractive GPS collar. It more or less works out in the open, but in the woods it is useless. 
+					Either the GPS doesn't connect or the telephone doesn't connect, even though my phone shows good signals for both.<br><br>
+					Is there a GPS unit out there that actually works? (it would be great if it wasn't $1,000...)</p>
+				<br><br>
+				<hr>
+				<h3>Discussion:</h3>
+				<div id="comment-list-2">
+				</div>
+				<br>
+				<h4>Add your comment: </h4>
+				<br>
+				<label>Name: </label>
+				<input type="text" id="comment-name-2" placeholder="Name">
+				<br>
+				<label>Comment: </label><br>
+				<textarea id="comment-text-2"></textarea>
+				<br>
+				<input type="submit" value="POST" onclick="addComment2()"></input>
+			</div>
+			
+			<div id="Forum3" class="tabcontent" style="display: none;">
+				<h2>Lab/redbone mix and cats?</h2>
+				<br><br>
+				<p>Greetings! I just adopted a 2 year old female labmix. After doing some research she definitely seems to be a redbone/lab mix. She’s darn near the perfect dog but I’m a little worried about one thing: our cats.So far here is what I’ve observed:
+					She’s fine with the cats, generally not interested in them or only mildly curious about them. She has tried to share food with them and has gotten right into some of their faces to say “hi” but if one of them runs she runs after them. If I call her back when she does so she comes back to me immediately 9 times out of 10.
+					She grabs her toys by the neck and shakes them out like prey. This upsets me because I’m imagining her doing the same thing to our cats.<br>
+					Any thoughts on whether this is normal/trainable adjustment stuff or if we have to rethink this pairing? I don’t ever leave them alone unsupervised. Our cats are the priority.<br>
+					therwise she’s a model citizen, a fantastic leash walker, and very eager to please. She definitely appears to have had at least some training in the past. Her recall is not perfect but inside the house she’s about 99%.</p>
+				<img src="https://www.dogforums.com/cdn-cgi/image/format=auto,onerror=redirect,width=1920,height=1920,fit=scale-down/https://www.dogforums.com/attachments/aaf5df23-7570-472f-a3e5-bbcc2115e102-jpeg.265293/" style="height: 500px" alt="RedDog">
+				<br><br>
+				<hr>
+				<h3>Discussion:</h3>
+				<div id="comment-list-3">
+				</div>
+				<br>
+				<h4>Add your comment: </h4>
+				<br>
+				<label>Name: </label>
+				<input type="text" id="comment-name-3" placeholder="Name">
+				<br>
+				<label>Comment: </label><br>
+				<textarea id="comment-text-3"></textarea>
+				<br>
+				<input type="submit" value="POST" onclick="addComment3()"></input>
+			</div>
+			
+			<div id="Forum4" class="tabcontent" style="display: none;">
+				<h2>Light weight dog food</h2>
+				<br><br>
+				<p>I enjoy camping and backpacking with my dog. Up until recently, I had to carry her food because I couldn't get her to wear her own pack without her running into the bushes and getting stuck. 
+					On my last trip with her, I found a freeze dried dog food packed in this cool pouch that disintegrated when mixed with water. 
+					The food was super light and I didn't have any garbage to pack out. It was pretty neat. I could even read all the ingredients on the package. 
+					That made me super happy. The name of the company that makes the food is called Hi Tailin’ It!. Just an FYI - I saw it advertised on NewsWatch. 
+				</p>
+				<br><br>
+				<hr>
+				<h3>Discussion:</h3>
+				<div id="comment-list-4">
+				</div>
+				<br>
+				<h4>Add your comment: </h4>
+				<br>
+				<label>Name: </label>
+				<input type="text" id="comment-name-4" placeholder="Name">
+				<br>
+				<label>Comment: </label><br>
+				<textarea id="comment-text-4"></textarea>
+				<br>
+				<input type="submit" value="POST" onclick="addComment4()"></input>
+			</div>
+		</section>
+	</main>
+	
+	<!--Footer Section-->
+	<footer>
+	<div>
+		Created by: Bonnie Joe.<br>
+		<b>This website is for academic purposes only.</b><br>
+		Contact me at:
+			<a href="mailto:joeb1@student.eit.ac.nz">joeb1@student.eit.ac.nz</a>
+			<br>
+			<br>
+		<a href="references.html">References &  Authenticity</a> |
+		<a href="Privacy-policy.html">Privacy Policy</a> |
+		<a href="TermsOfUse.html">Terms of Use</a>
+	</div>
+	</footer>
+	
+	<script src="javascript/javascript.js"></script>
+	<script>
+		loadComments();
+		loadComments2();
+		loadComments3();
+		loadComments4();
+	</script>
+
+</body>
+</html>
